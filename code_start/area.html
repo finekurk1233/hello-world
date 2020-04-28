@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<p id="demo"></p>
+
+
+<script type="text/javascript">
+class Rectangle{
+	constructor(height, width){
+		this.height = height;
+		this.width = width;
+	}
+	get area(){
+		return this.calArea;
+	}
+	calArea(){
+		return this.height * this.width;
+	}
+}
+ const myArea = new  Rectangle(10, 10); 
+document.getElementById("demo").innerHTML = myArea.area();
+</script>
+</body>
+</html>

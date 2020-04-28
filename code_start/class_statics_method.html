@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p id="main"></p>
+<script type="text/javascript">
+
+class Car{
+	constructor(brand){
+		this.carname = brand;
+	}
+	static hello(x){
+		return "Hello!! " + x.carname;
+	}
+}
+mycar = new Car("Ford");
+//Call
+mycar2 = new Car("Mustang");
+document.getElementById("main").innerHTML = Car.hello(mycar);   
+</script>
+</body>
+</html>

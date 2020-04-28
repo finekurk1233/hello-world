@@ -1,0 +1,31 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<input type="text" id="demo">
+<button onclick="myFunction()" value>Test Input</button>
+<p id="p01"></p>
+
+
+<script type="text/javascript">
+"use strict";
+x = 3.14; 
+function myFunction(){
+var message, x;
+message = document.getElementById("p01");
+message.innerHTML = "";
+x = document.getElementById("demo").value;
+try{
+	if(x == "") throw "empty";
+	if(isNaN(x)) throw "Not a Number";
+	x = Number(x);
+	if(x < 5) throw "too low";
+	if (x > 10) throw "too high";
+	}catch(err){
+	message.innerHTML = "Input is " + err;
+		}
+	}
+</script>
+</body>
+</html>
